@@ -1,0 +1,381 @@
+/*body, html {*/
+/*  margin: 0;*/
+
+/*  !* Set background image *!*/
+/*  background-image: url('https://res.cloudinary.com/dguji3exb/image/upload/v1753735152/sngikp5dvirifcdjqxv2.jpg');*/
+
+/*  !* Center and scale the image nicely *!*/
+/*  background-position: center;*/
+/*  background-repeat: no-repeat;*/
+/*  background-size: cover;*/
+/*  background-attachment: fixed;*/
+
+/*  !* To stretch empty content vertically *!*/
+/*  display: flex;*/
+/*  min-height: 100vh;*/
+/*  flex-direction: column;*/
+/*}*/
+
+body, html {
+  margin: 0;
+  height: 100vh;
+  background: radial-gradient(circle at center, #066C44 0%, #04573B 30%, #091F2A 75%, #061323 100%) center no-repeat fixed;
+  background-size: cover;
+
+  /* To stretch empty content vertically */
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+
+/* Navbar styles */
+nav {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  margin-bottom: 2rem;
+  position: relative;
+}
+
+nav a {
+  margin-right: 20px;
+  text-decoration: none;
+  color: #ffffff;
+}
+
+nav li a:hover {
+  text-shadow: 0 0 12px #00FF00;
+  color: #00FF00;
+  transition: color 0.2s ease-in-out;
+}
+
+.nav-item {
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+
+/* HTML tag styles */
+h1 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 60px;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #EEEEEE;
+  text-shadow: 3px 3px 5px #000000
+}
+
+h3 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 26px;
+  font-weight: 500;
+  color: #EEEEEE;
+  margin-bottom: 1rem;
+}
+
+p {
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  line-height: 1.6;
+  color: #EEEEEE;
+}
+
+hr {
+  color: #EEEEEE;
+}
+
+strong {
+  text-shadow: 0 0 4px #00FF00;
+}
+
+label {
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  padding-top: 20px;
+  color: #EEEEEE;
+}
+
+
+/* Custom styles */
+.footer-text {
+  color: #4F9ABF;
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  text-align: center;
+  text-shadow: 0 0 10px #242761;
+}
+
+.subtext {
+  font-size: 15px;
+  line-height: 0.8;
+  color: #BBBBBB;
+}
+
+.logo img {
+  height: 36px;
+  margin-right: 10px;
+}
+
+.avatar {
+  width: 280px;
+  height: 280px;
+  border: 3px solid #BBBBBB;
+  border-radius: 100%;
+  margin-right: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.25), 0 6px 20px 0 rgba(0, 0, 0, 0.35);
+}
+
+.me {
+  height: 300px;
+}
+
+.signature-image {
+  height: 100px;
+}
+
+.error-message {
+  color: #FF0000;
+  font-family: 'Nunito', sans-serif;
+  font-size: 20px;
+  text-align: center;
+  text-shadow: 0 0 4px #000000;
+  margin-top: 30px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.error-400 {
+  max-height: 200px;
+  max-width: 80%;
+}
+
+/* Stretch page content vertically (To keep the footer at the bottom) */
+.page-content {
+  flex: 1;
+}
+
+
+/* Form Styling */
+.dark-form {
+  justify-content: center;
+  align-items: center;
+}
+
+input, textarea {
+  font-family: 'Nunito', sans-serif;
+  font-size: 18px;
+  color: rgba(255, 255, 255, 0.9);
+  padding: 10px;
+  border-radius: 7px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(10, 10, 10, 0.4);
+  width: 100%;
+  display: block;
+  margin: -20px auto;
+  box-sizing: border-box;
+  resize: none;
+}
+
+input:focus, textarea:focus {
+  outline: none;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+input::placeholder, textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+
+.dark-form-2fa {
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 28px;
+  color: #22BAFD;
+  padding: 3px;
+  border-radius: 7px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background-color: rgba(10, 10, 10, 0.4);
+  width: 100%;
+  display: block;
+  margin: -20px auto;
+  box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+  width: auto;
+  margin-right: 10px;
+  color: #EEEEEE;
+}
+
+.checkboxes {
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.send-message-button {
+  display: block;
+  margin-right: 0;
+  margin-left: auto;
+  width: 250px;
+}
+
+@media (max-width: 767px) {
+  .send-message-button {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.login-form {
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.add-form {
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.form-button {
+  width: 100%;
+}
+
+.form-icon {
+  height: 150px;
+  width: 150px;
+}
+
+.contact-icon {
+  height: 60px;
+  width: 60px;
+}
+
+.contact-icon:hover {
+  transform: scale(1.2);
+  transition: transform 0.3s ease-in-out;
+}
+
+/* Animation styles */
+/* Fade In and Move Up */
+@keyframes fadeInUp {
+  0% {
+        transform: translateY(20%);
+        opacity: 0;
+      }
+  100% {
+    transform: translateY(0%);
+    opacity: 1;
+    }
+  }
+
+.fadeInUp-animation {
+  animation: 1.0s fadeInUp;
+}
+
+/* Move Up */
+@keyframes moveUp {
+  0% {
+        transform: translateY(20%);
+      }
+  100% {
+    transform: translateY(0%);
+    }
+  }
+
+.moveUp-animation {
+  animation: 1s moveUp;
+}
+
+
+/* Card styles */
+.card {
+  border-radius: 20px;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-img-top {
+  border-radius: 20px 20px 0 0;
+  height: 225px;
+  object-fit: cover;
+}
+
+.project-language-icon {
+  height: 28px;
+  position: relative;
+  bottom: 3px;
+  padding-left: 10px;
+  -webkit-filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.6));
+  filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.6));
+}
+
+.card-button {
+  height: 26px;
+  margin: 5px 2px;
+}
+
+.card-buttons {
+  position: absolute;
+  top: 2px;
+  right: 5px;
+  z-index: 1;
+}
+
+.card-description {
+  font-family: 'Nunito', sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #EEEEEE;
+  min-height: 90px;
+  overflow: hidden;
+}
+
+.skill-tile {
+  height: 180px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  margin-bottom: 20px;
+  }
+
+.skill-icon {
+  height: 50px;
+}
+
+.skill-icon-dark {
+  height: 50px;
+  filter: invert(1);
+}
+
+
+/* Glass Effect */
+.glass-effect {
+  background: linear-gradient(135deg, rgba(20, 20, 20, 1), rgba(200, 200, 200, 0.1));
+  -webkit-backdrop-filter: blur(3px);
+  backdrop-filter: blur(3px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 20px;
+}
+
+.glass-navbar {
+  background: linear-gradient(135deg, rgba(20, 20, 20, 0.8), rgba(50, 50, 50, 0.3));
+  -webkit-backdrop-filter: blur(15px);
+  backdrop-filter: blur(15px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+}
